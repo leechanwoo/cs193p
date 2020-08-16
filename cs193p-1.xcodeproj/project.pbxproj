@@ -21,6 +21,7 @@
 		9A3F0DC024A81CF000478ED2 /* cs193p_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F0DBF24A81CF000478ED2 /* cs193p_1UITests.swift */; };
 		9A3F0DCE24B16CD200478ED2 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F0DCD24B16CD200478ED2 /* MemoryGame.swift */; };
 		9A3F0DD024B16F4100478ED2 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F0DCF24B16F4100478ED2 /* EmojiMemoryGame.swift */; };
+		9A43036724E8D0A400F4911E /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A43036624E8D0A400F4911E /* Pie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9A3F0DC124A81CF000478ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A3F0DCD24B16CD200478ED2 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		9A3F0DCF24B16F4100478ED2 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		9A43036624E8D0A400F4911E /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				9A3F0DCF24B16F4100478ED2 /* EmojiMemoryGame.swift */,
 				9A3DD78924DF956E00C0582B /* Array+Identifiable.swift */,
 				9A3DD78B24DFA1B200C0582B /* Array+Only.swift */,
+				9A43036624E8D0A400F4911E /* Pie.swift */,
 			);
 			path = "cs193p-1";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A43036724E8D0A400F4911E /* Pie.swift in Sources */,
 				9A3F0D9E24A81CE300478ED2 /* AppDelegate.swift in Sources */,
 				9A3F0DA024A81CE300478ED2 /* SceneDelegate.swift in Sources */,
 				9A3F0DCE24B16CD200478ED2 /* MemoryGame.swift in Sources */,
