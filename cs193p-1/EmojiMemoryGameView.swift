@@ -35,25 +35,22 @@ struct CardView : View {
     
     // MARK: - Drawing Constants
     
+    @ViewBuilder 
     private func body(for size: CGSize) -> some View {
-        ZStack {
-            if self.card.isFaceUp {
-                RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
-                RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
-                Circle().padding().opacity(0.4)
+        if card.isFaceUp || !card.isMatched {
+            ZStack {
+                Pie(startAngle: .degrees(0-90), endAngle: .degrees(110-90), clockwise: true)
+                    .padding(5).opacity(0.4)
                 Text(self.card.content)
-            } else {
-                if (!card.isMatched){
-                    RoundedRectangle(cornerRadius: cornerRadius).fill()
-                }
-                
-            } // if .. else ..
+                    .font(Font.system(size: fontSize(for: size)))
+
+            }
+            .cardify(isFaceUp: card.isFaceUp)
         }
-        .font(Font.system(size: fontSize(for: size)))
+
     }
     
-    private let cornerRadius: CGFloat = 10.0
-    private let edgeLineWidth: CGFloat = 3
+
     private func fontSize(for size: CGSize) -> CGFloat {
         min(size.width, size.height)*0.75
     }
